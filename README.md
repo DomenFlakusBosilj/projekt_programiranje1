@@ -2,7 +2,7 @@ Trg nepremičnin v Ljubljani
 =======================
 
 Analiziral bom nepremičnine, ki so naprodaj na spletni strani
-[Nepremičnine](https://www.nepremicnine.net/oglasi-prodaja/ljubljana-mesto/).
+[Nepremičnine](https://www.nepremicnine.net/oglasi-prodaja/slovenija/).
 
 Za vsako nepremičnino bom zajel:
 * vrsto nepremičnine
