@@ -10,7 +10,7 @@ Za vsako nepremičnino bom zajel:
 * leto izgradnje
 * velikost
 * ceno
-* nadstropja
+* število nadstropij oz. nadstroje v katerem se nahaja nepremičnina
 
 Delovne hipoteze:
 * Katera vrsta nepremičnin ima najvišjo ceno na kavdratni mater?
