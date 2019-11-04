@@ -35,9 +35,3 @@ for zadetek in re.finditer(vzorec, vsebina):
     print(zadetek.groupdict())
     count += 1
 print(count)
-
-
-def loci_na_oglase(stran):
-    vsebina = orodja.vsebina_datoteke(stran)
-    vzorec = r'<span class="title">(.*?)</span>'
-    return re.findall(vzorec, vsebina)
