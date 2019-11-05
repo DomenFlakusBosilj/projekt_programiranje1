@@ -22,4 +22,3 @@ Delovne hipoteze:
 * Pri kateri vrsti nepremičnin starost najbolj vpliva na ceno?
 * V kateri od slovenskih regij so nepremičnine najdražje in v kateri najcenejše?
 
-===========================================
