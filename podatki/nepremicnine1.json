@@ -1,0 +1,312 @@
+[
+    {
+        "ime": "NOVA GORICA",
+        "vrsta": "Poslovni prostor",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "750,00",
+        "agencija": "DUTB, d.d."
+    },
+    {
+        "ime": "NOVA GORICA",
+        "vrsta": "Poslovni prostor",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "2.700.000,00",
+        "agencija": "DUTB, d.d."
+    },
+    {
+        "ime": "NOVO MESTO",
+        "vrsta": "Stanovanje",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "173.700,00",
+        "agencija": "Casa 69 d.o.o."
+    },
+    {
+        "ime": "NOVO MESTO",
+        "vrsta": "Poslovni prostor",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "1.120.000,00",
+        "agencija": "ABC nepremičnine d.o.o."
+    },
+    {
+        "ime": "OREHOVSKI VRH",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "145.000,00",
+        "agencija": "EVANA posredovanje d.o.o."
+    },
+    {
+        "ime": "ORLE",
+        "vrsta": "Posest",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "140.000,00",
+        "agencija": "Premium nepremičnine d.o.o."
+    },
+    {
+        "ime": "PIRAN, PRVOMAJSKI TRG",
+        "vrsta": "Stanovanje",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "82.000,00",
+        "agencija": "RE/MAX Obala, Nepremičninska družba, d.o.o."
+    },
+    {
+        "ime": "PEKRE",
+        "vrsta": "Počitniški objekt",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "1.490.000,00",
+        "agencija": "DUTB, d.d."
+    },
+    {
+        "ime": "PIRAN, BLIŽINA MESTA IN PLAŽE",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "299.000,00",
+        "agencija": "Svitan d.o.o., PE nepremičnine"
+    },
+    {
+        "ime": "PIRAN, TRG 1. MAJA",
+        "vrsta": "Stanovanje",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "240.000,00",
+        "agencija": "Obala nepremičnine d.o.o."
+    },
+    {
+        "ime": "PIVOLA",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "159.618,10",
+        "agencija": "Atrium nepremičnine d.o.o."
+    },
+    {
+        "ime": "PLANINA NA POHORJU, ROGLA",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "119.000,00",
+        "agencija": "Premium nepremičnine d.o.o."
+    },
+    {
+        "ime": "PODČETRTEK",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "170.000,00",
+        "agencija": "Zasebna ponudba"
+    },
+    {
+        "ime": "POLJČANE",
+        "vrsta": "Stanovanje",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "22.900,00",
+        "agencija": "Agenti nepremičninsko posredovanje, d.o.o."
+    },
+    {
+        "ime": "POLJE PRI VODICAH, MODERNO ZASNOVANA",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "480.000,00",
+        "agencija": "STAN nepremičnine d.o.o., Ljubljana"
+    },
+    {
+        "ime": "PORTOROŽ, PENTHOUSE Z BAZENOM V PORTOROŽU",
+        "vrsta": "Stanovanje",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "539.000,00",
+        "agencija": "ABC nepremičnine d.o.o."
+    },
+    {
+        "ime": "PORTOROŽ, VILA - NOVOGRADNJA",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "1.290.000,00",
+        "agencija": "Vila Portorož d.o.o."
+    },
+    {
+        "ime": "POSTOJNA, KOČE",
+        "vrsta": "Posest",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "22.000,00",
+        "agencija": "Nepremičnine Land d.o.o."
+    },
+    {
+        "ime": "PREVOJE PRI ŠENTVIDU, LUKOVICA - DOMŽALE",
+        "vrsta": "Stanovanje",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "93.000,00",
+        "agencija": "Premium nepremičnine d.o.o."
+    },
+    {
+        "ime": "PUŠČE, VELIKE LAŠČE",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "155.000,00",
+        "agencija": "Premium nepremičnine d.o.o."
+    },
+    {
+        "ime": "RADIZEL, KOLMANOVA ULICA",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "189.900,00",
+        "agencija": "INSA d.o.o., Europark Maribor"
+    },
+    {
+        "ime": "RAKOVNIK, NOVO NASELJE",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "312.613,74",
+        "agencija": "Iskra, d.o.o."
+    },
+    {
+        "ime": "RAKOVNIK, NOVO NASELJE",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "321.271,04",
+        "agencija": "Iskra, d.o.o."
+    },
+    {
+        "ime": "RAKOVNIK, OB DOLENJSKI CESTI",
+        "vrsta": "Stanovanje",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "229.910,58",
+        "agencija": "Magda - Bohinj d.o.o."
+    },
+    {
+        "ime": "RAKOVNIK, OB DOLENJSKI CESTI",
+        "vrsta": "Stanovanje",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "217.819,59",
+        "agencija": "Magda - Bohinj d.o.o."
+    },
+    {
+        "ime": "RATEČE",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "440.000,00",
+        "agencija": "DUTB, d.d."
+    },
+    {
+        "ime": "RAVNE NA KOROŠKEM, DOBJA VAS, OBRTNA CONA",
+        "vrsta": "Posest",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "60,00",
+        "agencija": "SIMOBILIA nepremičnine d.o.o."
+    },
+    {
+        "ime": "RAVNIK, MIRNA, ŠENTRUPERT",
+        "vrsta": "Vikend",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "56.000,00",
+        "agencija": "Oridom nepremičnine, Ivan Orešnik s.p."
+    },
+    {
+        "ime": "RETEČE, DRUŽINSKO NASELJE",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "350.000,00",
+        "agencija": "Zasebna ponudba"
+    },
+    {
+        "ime": "RIBNO, 2, 5 KM OD BLEJSKEGA JEZERA",
+        "vrsta": "Stanovanje",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "198.500,00",
+        "agencija": "Makler Bled d.o.o."
+    },
+    {
+        "ime": "RUDNIK, TRNOVSKO PREDMESTJE",
+        "vrsta": "Hiša",
+        "koliko_sobno": null,
+        "leto_izgradnje": null,
+        "zemljisce": null,
+        "velikost": null,
+        "cena": "450.000,00",
+        "agencija": "Aion d.o.o."
+    }
+]
