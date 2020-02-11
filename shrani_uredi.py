@@ -10,64 +10,114 @@ def shrani_strani_iz_nepremicnine(stevilo_oglasov):
         )
         orodja.shrani_spletno_stran(url, f'spletne_strani/nepremicnine{stevilka}.html', vsili_prenos=False)
 
+flags = re.DOTALL
 
-
-
+# vzorec = (
+#     r'<span class="title">(?P<ime>.*?)</span></a></h2>.*?'
+#     r'class="vrsta">(?P<vrsta>.*?)</span>.*'
+#     r'(class="tipi">(?P<koliko_sobno>.*?)</span></span>)*.*'
+#     r'(class="atribut leto">Leto: <strong>(?P<leto_izgradnje>.*?)</strong>)*.*'
+#     r'(<span class="atribut">Zemljišče: <strong>(?P<zemljisce>.*?) m2</strong>)*(.*\s*)*?'
+#     r'(<span class="velikost" lang="sl">(?P<velikost>.*?) m2</span><br />\s)'
+#     r'<span class="cena">(?P<cena>.*?) &euro(.*)?</span>'
+#     r'(\s*<span class="agencija">(?P<agencija>.*?)</span>)+'
+#     )
 
 vzorec = (
     r'<span class="title">(?P<ime>.*?)</span></a></h2>.*?'
     r'\s*.*\s*.*\s*.*\s*.*'
-    r'class="vrsta">(?P<vrsta>.*?)</span>.*'
-    r'(class="tipi">(?P<koliko_sobno>.*?)</span></span>)?.*'
+    r'<span class="posr">(?P<posred>.*?): <span class="vrsta">(?P<vrsta>.*?)</span>.*'
+    r'(class="tipi">(?P<koliko_sobno>.*?)</span></span>)?'
     r'\s*.*\s*.*\s*.*\s*.*'
-    r'(class="atribut leto">Leto: <strong>(?P<leto_izgradnje>.*?)</strong>)?.*'
-    r'(<span class="atribut">Zemljišče: <strong>(?P<zemljisce>.*?) m2</strong>)?(.*\s*)*?'
-    r'(<span class="velikost" lang="sl">(?P<velikost>.*?) m2</span><br />\s)?'
-    r'<span class="cena">(?P<cena>.*?) &euro(.*)?</span>'
+    r'(\s*<span class="atribut leto">Leto: <strong>(?P<leto_izgradnje>.*)</strong>)?'
+    r'(\s*<span class="atribut">Zemljišče: <strong>(?P<zemljisce>.*) m2</strong>)?'
+    r'(.*\s*)*?'
+    r'<span class="velikost" lang="sl">(?P<velikost>.*) m2</span><br />'
+    r'\s*<span class="cena">(?P<cena>.*) &euro(.*)?</span>'
     r'(\s*<span class="agencija">(?P<agencija>.*?)</span>)?'
     )
 
+# vzorec = (
+#     r'<span class="title">(?P<ime>.*?)</span></a></h2>.*?'
+#     r'\s*.*\s*.*\s*.*\s*.*'
+#     r'<span class="posr">(?P<posred>.*?): <span class="vrsta">(?P<vrsta>.*?)</span>.*'
+#     r'(class="tipi">(?P<koliko_sobno>.*?)</span></span>)?'
+#     r'\s*.*\s*.*\s*.*\s*.*'
+#     r'(class="atribut leto">Leto: <strong>(?P<leto_izgradnje>.*)</strong>)?'
+#     r'(\s*<span class="atribut">Zemljišče: <strong>(?P<zemljisce>.*) m2</strong>)?'
+#     r'(.*\s*)*?'
+#     r'(<span class="velikost" lang="sl">(?P<velikost>.*) m2</span><br />)?'
+#     r'\s*<span class="cena">(?P<cena>.*) &euro(.*)?</span>'
+#     r'(\s*<span class="agencija">(?P<agencija>.*?)</span>)?'
+#     )
+
+#<div class="main-data">\s*(<span class="velikost" lang="sl">(.*) m2</span>)?.*\s*<span class="cena">(.*) &euro;</span>\s*(<span class="agencija">(.*?)</span>)?
+# vzorec = (
+#     r'<span class="title">(?P<ime>.*?)</span></a></h2>.*?'
+#     r'\s*.*\s*.*\s*.*\s*.*'
+#     r'<span class="posr">(?P<posred>.*?): <span class="vrsta">(?P<vrsta>.*?)</span>.*'
+#     r'(class="tipi">(?P<koliko_sobno>.*?)</span></span>)?'
+#     r'\s*.*\s*.*\s*.*\s*.*'
+#     r'(class="atribut leto">Leto: <strong>(?P<leto_izgradnje>.*?)</strong>)?'
+#     r'(<span class="atribut">Zemljišče: <strong>(?P<zemljisce>.*?) m2</strong>)?(.*\s*)*?'
+#     r'(<span class="velikost" lang="sl">(?P<velikost>.*?) m2</span><br />\s)?'
+#     r'<span class="cena">(?P<cena>.*?) &euro(.*)?</span>'
+#     r'(\s*<span class="agencija">(?P<agencija>.*?)</span>)?'
+#     )
+
 flags = re.DOTALL
 
-    # r'<span class="title">(?P<ime>.*?)</span></a></h2>.*?'
-    # r'\s*.*\s*.*\s*.*\s*.*'                                        #nepomembno
-    # r'<span class="vrsta">(?P<tip>.*?)</span>'
-    # r'.*\s*.*\s*.*\s*.*\s*.*'                           #pridem do vrstice z nadstropje
-    #r'<span class="atribut">Nadstropje: <strong>(?P<nadstropje>.*?)'    #nadstropje kak naredit da jemlje iz dveh delckov?
-    # r'<span class="atribut leto">Leto: <strong>(?P<leto>.*?)</strong></span><span class="invisible">, </span>'  #leto izgradnje
-    # r'<span class="velikost" lang="sl">(?P<velikost_nepremicnine>.*?) m2</span><br />'
-    # r'<span class="atribut">Zemljišče: <strong>(?P<zemljisce>.*?) m2</strong></span>'
-    # r'<span class="cena">(?P<cena>.*?) &euro.*?</span>'
-
+# vzorec = (
+#     r'<span class="title">(?P<ime>.*?)</span></a></h2>.*?'
+#     r'\s*.*\s*.*\s*.*\s*.*'                                        #nepomembno
+#     r'<span class="vrsta">(?P<tip>.*?)</span>'
+#     r'.*\s*.*\s*.*\s*.*\s*.*'                           #pridem do vrstice z nadstropje
+#     r'<span class="atribut">Nadstropje: <strong>(?P<nadstropje>.*?)'    #nadstropje kak naredit da jemlje iz dveh delckov?
+#     r'<span class="atribut leto">Leto: <strong>(?P<leto>.*?)</strong></span><span class="invisible">, </span>'  #leto izgradnje
+#     r'<span class="velikost" lang="sl">(?P<velikost_nepremicnine>.*?) m2</span><br />'
+#     r'<span class="atribut">Zemljišče: <strong>(?P<zemljisce>.*?) m2</strong></span>'
+#     r'<span class="cena">(?P<cena>.*?) &euro.*?</span>'
+#     )
 
 nepremicnine = []
 count = 0
 
-# for i in range(1, 667):
-#     with open(f'spletne_strani/nepremicnine{i}.html', encoding='utf-8') as f:
-#         vsebina = f.read()
-#     for zadetek in re.finditer(vzorec, vsebina):
-#         nepremicnine.append(zadetek.groupdict())
-#         count += 1
-#         print(zadetek.groupdict())
-#print(nepremicnine)
+count_stran = 0
 
-# orodja.zapisi_json(nepremicnine, 'nepremicnine.json')
+for i in range(1, 667):
+    if i == 118:
+        continue
+    else:
+        count = 0
+        with open(f'spletne_strani/nepremicnine{i}.html', encoding='utf-8') as f:
+            vsebina = f.read()
+            count_stran += 1
+            print(count_stran)
+        for zadetek in re.finditer(vzorec, vsebina):
+            nepremicnine.append(zadetek.groupdict())
+            count += 1
+            #print(zadetek.groupdict())
+        print(count)
+#print(nepremicnine)
 
 
 #ZA POSKUSAT
-with open(f'spletne_strani/nepremicnine5.html', encoding='utf-8') as f:
-     vsebina = f.read()
+# with open(f'spletne_strani/nepremicnine5.html', encoding='utf-8') as f:
+#      vsebina = f.read()
 
-for zadetek in re.finditer(vzorec, vsebina):
-    nepremicnine.append(zadetek.groupdict())
-    print(zadetek.groupdict())
-    count += 1
-print(count)
+# for zadetek in re.finditer(vzorec, vsebina, flags=re.DOTALL):
+#     nepremicnine.append(zadetek.groupdict())
+#     print(zadetek.groupdict())
+#     count += 1
+# print(count)
 
 
-imena_polj = ['ime', 'vrsta', 'koliko_sobno', 'leto_izgradnje', 'zemljisce',
+
+#daj bek ad-bg
+#stran 40 je ena oddaja namesto prodaja
+
+imena_polj = ['ime', 'posred', 'vrsta', 'koliko_sobno', 'leto_izgradnje', 'zemljisce',
                 'velikost', 'cena', 'agencija']
-orodja.zapisi_csv(nepremicnine, imena_polj, 'podatki/nepremicnine1.csv')
-orodja.zapisi_json(nepremicnine, 'podatki/nepremicnine1.json')
+orodja.zapisi_csv(nepremicnine, imena_polj, 'podatki/nepremicnine4.csv')
+orodja.zapisi_json(nepremicnine, 'podatki/nepremicnine4.json')
 
