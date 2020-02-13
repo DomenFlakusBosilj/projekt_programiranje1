@@ -16,10 +16,10 @@ vzorec = re.compile (
     r'<span class="posr">(?P<posred>.*?): <span class="vrsta">(?P<vrsta>.*?)</span>.*?'
     r'<span class="tipi">(?P<tip>.*?)</span>.*?'
     r'<span class="atribut leto">Leto: <strong>(?P<leto>.*?)</strong>.*?'
-    r'<span class="atribut">Zemljišče: <strong>(?P<zemljisce>.*?) m2</strong>.*?'
+    r'(<span class="atribut">Zemljišče: <strong>(?P<zemljisce>.*?) m2</strong>)?.*?'
     r'<span class="velikost" lang="sl">(?P<velikost>.*?) m2</span><br />.*?'
     r'<span class="cena">(?P<cena>.*?) &euro.*?</span>.*?'
-    r'<span class="agencija">(?P<agencija>.*?)</span>', 
+    r'(<span class="agencija">(?P<agencija>.*?)</span>)?', 
     flags=re.DOTALL
     )
 
@@ -61,11 +61,14 @@ def naredi_seznam_nepremicnin(st_htmljev, vzorec):
 def popravi_zapisi(seznam, i):
     for nepremicnina in seznam:
         nepremicnina['leto'] = int(nepremicnina['leto'])
-        nepremicnina['zemljisce'] = float(nepremicnina['zemljisce'].replace('.','').replace(',','.'))
         nepremicnina['velikost'] = float(nepremicnina['velikost'].replace('.','').replace(',','.'))
         nepremicnina['cena'] = float(nepremicnina['cena'].replace('.','').replace(',','.'))
+        if nepremicnina['zemljisce'] is not None:
+            nepremicnina['zemljisce'] = float(nepremicnina['zemljisce'].replace('.','').replace(',','.'))
     imena_polj = ['ime', 'posred', 'vrsta', 'tip', 'leto', 'zemljisce',
                 'velikost', 'cena', 'agencija']
     orodja.zapisi_csv(seznam, imena_polj, f'podatki/nepremicnine{i}.csv')
     orodja.zapisi_json(seznam, f'podatki/nepremicnine{i}.json')
 
+nepremicnine = naredi_seznam_nepremicnin(70, vzorec)
+popravi_zapisi(nepremicnine, 11)
